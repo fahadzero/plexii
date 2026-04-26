@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library - Plexii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="page path-library">
+  <header id="header" class="region region-header site-header">
+    <!-- Top bar: social + contact -->
+    <div class="header-top">
+      <div class="header-top-inner">
+        <div class="block block-social">
+          <nav class="social-links" aria-label="Social media">
+            <a href="#" class="social-link" aria-label="X (Twitter)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" class="social-link" aria-label="TikTok"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </nav>
+        </div>
+        <div class="block block-contact">
+          <a href="#" class="contact-item"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Kampala, Uganda</a>
+          <a href="tel:+256394003934" class="contact-item"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>+256 394 003 934</a>
+          <a href="mailto:info@plexii.org" class="contact-item"><span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>info@plexii.org</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky wrapper: main nav + commodity bar -->
+    <div class="header-sticky-wrapper">
+      <div class="header-main">
+        <div class="header-main-inner">
+          <div class="block block-system-branding-block site-branding">
+            <a href="index.html" class="site-logo">
+              <img src="assets/logo.svg" alt="Plexii" class="site-logo-img">
+            </a>
+          </div>
+          <nav class="block block-menu main-navigation" aria-label="Main navigation">
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+            <ul class="menu" id="main-menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="news.html">NEWS UPDATES</a></li>
+              <li><a href="mining.html">MINING</a></li>
+              <li><a href="oil-gas.html">OIL &amp; GAS</a></li>
+              <li><a href="media.html">MEDIA</a></li>
+              <li class="is-active"><a href="library.html">LIBRARY</a></li>
+              <li class="menu-item-inquiry"><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="block block-inquiry">
+            <a href="#" class="btn-inquiry">
+              Contact us
+              <svg class="btn-arrow-icon" width="40" height="10" viewBox="0 0 40 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H37 M32.5 0.5 L37 5 L32.5 9.5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commodity prices bar -->
+      <div class="commodity-bar">
+        <div class="commodity-bar-inner">
+          <div class="commodity-bar-label">
+            <span class="live-indicator" aria-hidden="true"></span>
+            <span class="commodity-label-text">Selected Commodity Prices as at <span class="commodity-date">Jan 22, 2026</span>: USD Per Kg</span>
+          </div>
+          <div class="commodity-ticker-wrap">
+            <div class="commodity-ticker">
+              <div class="ticker-content">
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Gold</span> <span class="ticker-price">62.50</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Silver</span> <span class="ticker-price">0.72</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Copper</span> <span class="ticker-price">8.20</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Cobalt</span> <span class="ticker-price">28.15</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tin</span> <span class="ticker-price">25.80</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tungsten</span> <span class="ticker-price">42.30</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Iron Ore</span> <span class="ticker-price">0.11</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Lithium</span> <span class="ticker-price">14.50</span></span>
+              </div>
+              <div class="ticker-content" aria-hidden="true">
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Gold</span> <span class="ticker-price">62.50</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Silver</span> <span class="ticker-price">0.72</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Copper</span> <span class="ticker-price">8.20</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Cobalt</span> <span class="ticker-price">28.15</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tin</span> <span class="ticker-price">25.80</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tungsten</span> <span class="ticker-price">42.30</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Iron Ore</span> <span class="ticker-price">0.11</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Lithium</span> <span class="ticker-price">14.50</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-overlay" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main" class="region region-content" role="main">
+
+    <!-- Page title section -->
+    <section class="page-title-section" aria-label="Page title">
+      <div class="page-title-content">
+        <h1 class="page-title-heading">Library</h1>
+        <nav class="page-title-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">&gt;</span>
+          <span class="breadcrumb-current" aria-current="page">Library</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Library publications section -->
+    <section class="lib-pub-section site-section px-4 lg:px-5">
+      <div class="lib-pub-inner">
+
+        <!-- Tab bar -->
+        <div class="lib-tab-bar" role="tablist" aria-label="Publication categories">
+          <button class="lib-tab is-active" role="tab" aria-selected="true" data-tab="all">All</button>
+          <button class="lib-tab" role="tab" aria-selected="false" data-tab="reports">Reports</button>
+          <button class="lib-tab" role="tab" aria-selected="false" data-tab="magazines">Magazines</button>
+          <button class="lib-tab" role="tab" aria-selected="false" data-tab="policies">Policies &amp; Laws</button>
+        </div>
+
+        <!-- Publications grid -->
+        <div class="lib-pub-grid" id="lib-pub-grid">
+
+          <article class="lib-pub-card" data-category="reports">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="First Annual Mineral Development Scorecard cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--green">Annual Scorecard</span>
+              <h2 class="lib-pub-title">First Annual Mineral Development Scorecard</h2>
+              <p class="lib-pub-excerpt">The National Planning Authority (NPA), together with its partners, the Africa Centre for Energy and Mineral Policy (ACEMP) and ActionAid Uganda, with funding support from the Democratic Governance Facility (DGF) have developed the first ever Annual Minerals Scorecard for Uganda....</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="reports">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Second Annual Mining and Mineral Scorecard cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--green">Annual Scorecard</span>
+              <h2 class="lib-pub-title">Second Annual Mining and Mineral Scorecard</h2>
+              <p class="lib-pub-excerpt">This collaboration between NPA and ACEMP seeks to monitor the annual planning, budgeting and overall governance of the mining and minerals sub-sector and its contribution to Uganda's development aspirations as underscored in the National Development Plans and...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="magazines">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Opening The Black Box report cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--orange">Other</span>
+              <h2 class="lib-pub-title">Openning The Black Box: Local insights into the forma and informal mercury trade revealed</h2>
+              <p class="lib-pub-excerpt">Mercury is continually used in the artisanal and small-scale gold mining (ASGM) sector even though it is highly poisonous to both humans and the environment. There are an increasing number of projects, initiatives and conventions, including the Minamata Convention...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="reports">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="First Annual Mineral Development Scorecard cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--green">Annual Scorecard</span>
+              <h2 class="lib-pub-title">First Annual Mineral Development Scorecard</h2>
+              <p class="lib-pub-excerpt">The National Planning Authority (NPA), together with its partners, the Africa Centre for Energy and Mineral Policy (ACEMP) and ActionAid Uganda, with funding support from the Democratic Governance Facility (DGF) have developed the first ever Annual Minerals Scorecard for Uganda.</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="magazines">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Second Annual Mining and Mineral Scorecard cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--green">Annual Scorecard</span>
+              <h2 class="lib-pub-title">Second Annual Mining and Mineral Scorecard</h2>
+              <p class="lib-pub-excerpt">This collaboration between NPA and ACEMP seeks to monitor the annual planning, budgeting and overall governance of the mining and minerals sub-sector and its contribution to Uganda's development aspirations as underscored in the National Development Plans and...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="policies">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Opening The Black Box report cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--orange">Other</span>
+              <h2 class="lib-pub-title">Openning The Black Box: Local insights into the forma and informal mercury trade revealed</h2>
+              <p class="lib-pub-excerpt">Mercury is continually used in the artisanal and small-scale gold mining (ASGM) sector even though it is highly poisonous to both humans and the environment. There are an increasing number of projects, initiatives and conventions, including the Minamata Convention...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="policies">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Second Annual Mining and Mineral Scorecard cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--green">Annual Scorecard</span>
+              <h2 class="lib-pub-title">Second Annual Mining and Mineral Scorecard</h2>
+              <p class="lib-pub-excerpt">This collaboration between NPA and ACEMP seeks to monitor the annual planning, budgeting and overall governance of the mining and minerals sub-sector and its contribution to Uganda's development aspirations as underscored in the National Development Plans and...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+          <article class="lib-pub-card" data-category="magazines">
+            <div class="lib-pub-thumb">
+              <img src="assets/document-cover.jpg" alt="Opening The Black Box report cover" class="lib-pub-img">
+            </div>
+            <div class="lib-pub-body">
+              <span class="lib-pub-badge lib-pub-badge--orange">Other</span>
+              <h2 class="lib-pub-title">Openning The Black Box: Local insights into the forma and informal mercury trade revealed</h2>
+              <p class="lib-pub-excerpt">Mercury is continually used in the artisanal and small-scale gold mining (ASGM) sector even though it is highly poisonous to both humans and the environment. There are an increasing number of projects, initiatives and conventions, including the Minamata Convention...</p>
+              <a href="#" class="btn-download-report">
+                Download Report
+                <span class="download-icon" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 12l5 5 5-5"/><path d="M5 20h14"/></svg>
+                </span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="news-pagination" aria-label="Library pagination">
+          <a href="#" class="news-pagination-btn news-pagination-btn--prev" aria-label="Previous page">
+            <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 H3 M7.5 0.5 L3 5 L7.5 9.5"/></svg>
+            PREVIOUS
+          </a>
+          <a href="#" class="news-pagination-btn news-pagination-btn--next" aria-label="Next page">
+            NEXT
+            <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
+          </a>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- Library + Partners -->
+    <section class="lib-partners-section">
+      <div class="lib-partners-inner md:grid md:gap-4 lg:gap-5 md:grid-cols-2">
+
+        <!-- Library card -->
+        <div class="lib-card mb-4 md:mb-0">
+          <div class="lib-card-content">
+            <div class="grid gap-4 justify-items-center w-full">
+              <span class="lib-partners-badge w-max">
+                <img src="assets/p-icon-white.svg" width="16" height="16" aria-hidden="true" alt=""/>
+                Library
+              </span>
+              <h2 class="lib-card-title">Reports, Magazines, Policies &amp; Laws</h2>
+            </div>
+            <div class="library-footer">
+              <a href="library.html" class="btn-more-library">
+                view library
+                <span class="btn-more-library-icon" aria-hidden="true">
+                  <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partners card -->
+        <div class="partners-card">
+          <div class="grid gap-4 justify-items-center w-full">
+            <span class="lib-partners-badge lib-partners-badge--dark">
+              <img src="assets/plexii-icon.svg" width="16" height="16" aria-hidden="true" alt=""/>
+              Partners
+            </span>
+            <h2 class="partners-card-title">The Partners that we work with to drive our mission home</h2>
+          </div>
+          <div class="partners-carousel-wrap">
+            <div class="partners-carousel-track">
+              <div class="partners-carousel-inner">
+                <a href="https://www.enabel.be" class="partner-logo-link" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/enabel.jpg" alt="Enabel" class="partner-logo">
+                </a>
+                <a href="https://www.acemp.org" class="partner-logo-link" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/acemp.jpg" alt="ACEMP – Africa Centre For Energy And Mineral Policy" class="partner-logo">
+                </a>
+              </div>
+              <div class="partners-carousel-inner" aria-hidden="true">
+                <a href="https://www.enabel.be" class="partner-logo-link" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/enabel.jpg" alt="" class="partner-logo">
+                </a>
+                <a href="https://www.acemp.org" class="partner-logo-link" tabindex="-1" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/acemp.jpg" alt="" class="partner-logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="region region-footer">
+    <!-- Footer top bar: logo + contacts -->
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="footer-top-branding">
+          <img src="assets/acemp-logo.svg" alt="ACEMP" class="footer-acemp-logo">
+          <p><strong>PLEXII</strong> is a product of the Africa Centre<br>for Energy and Mineral Policy (ACEMP)</p>
+        </div>
+        <div class="footer-top-contacts">
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Write us an email</span>
+            <a href="mailto:info@plexii.org">info@plexii.org</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Give us a Call</span>
+            <a href="tel:+256394003934">+256 394 003 934</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer main body -->
+    <div class="footer-main">
+      <div class="footer-inner">
+        <div class="footer-main-grid">
+          <div class="footer-about">
+            <h3>Who we are</h3>
+            <p>PLEXII offers an opportunity for members to share thoughts and information, including new research relating to extractives, promote their work or events... <a href="#" class="read-more-link">Read More</a></p>
+            <h3>Stay updated with our news</h3>
+            <form class="footer-newsletter">
+              <input type="text" placeholder="Full Name">
+              <input type="email" placeholder="Email Address">
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+          </div>
+
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <div class="footer-nav-columns">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html">News Updates</a></li>
+                <li><a href="mining.html">Mining</a></li>
+                <li><a href="oil-gas.html">Oil &amp; Gas</a></li>
+              </ul>
+              <ul>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="library.html?tab=policies" class="is-active">Policies &amp; Laws</a></li>
+                <li><a href="library.html?tab=reports">Reports</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer-social" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="X (Twitter)"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="#" class="social-link" aria-label="TikTok"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Footer bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-inner">
+        <p>Copyright &copy; 2026 <strong>PLEXII</strong> All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.lib-tab');
+      var cards = document.querySelectorAll('.lib-pub-card');
+
+      function activate(tab) {
+        tabs.forEach(function (t) {
+          t.classList.remove('is-active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+
+        var selected = tab.dataset.tab;
+        cards.forEach(function (card) {
+          if (selected === 'all' || card.dataset.category === selected) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () { activate(tab); });
+      });
+
+      // Honor ?tab= query param
+      var params = new URLSearchParams(window.location.search);
+      var tabParam = params.get('tab');
+      if (tabParam) {
+        var match = document.querySelector('.lib-tab[data-tab="' + tabParam + '"]');
+        if (match) activate(match);
+      }
+    })();
+  </script>
+</body>
+</html>
