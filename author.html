@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plexii</title>
+  <title>Christopher Byaruhanga - Plexii</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="page path-frontpage">
+<body class="page path-news">
   <header id="header" class="region region-header site-header">
     <!-- Top bar: social + contact -->
     <div class="header-top">
@@ -37,7 +37,7 @@
       <div class="header-main">
         <div class="header-main-inner">
           <div class="block block-system-branding-block site-branding">
-            <a href="/" class="site-logo">
+            <a href="index.html" class="site-logo">
               <img src="assets/logo.svg" alt="Plexii" class="site-logo-img">
             </a>
           </div>
@@ -48,9 +48,9 @@
               <span class="hamburger-line"></span>
             </button>
             <ul class="menu" id="main-menu">
-              <li class="is-active"><a href="index.html">HOME</a></li>
+              <li><a href="index.html">HOME</a></li>
               <li><a href="about.html">ABOUT US</a></li>
-              <li><a href="news.html">NEWS UPDATES</a></li>
+              <li class="is-active"><a href="news.html">NEWS UPDATES</a></li>
               <li><a href="mining.html">MINING</a></li>
               <li><a href="oil-gas.html">OIL &amp; GAS</a></li>
               <li><a href="media.html">MEDIA</a></li>
@@ -77,14 +77,22 @@
           <div class="commodity-ticker-wrap">
             <div class="commodity-ticker">
               <div class="ticker-content">
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Gold</span> <span class="ticker-price">62.50</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Silver</span> <span class="ticker-price">0.72</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Copper</span> <span class="ticker-price">8.20</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Cobalt</span> <span class="ticker-price">28.15</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tin</span> <span class="ticker-price">25.80</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tungsten</span> <span class="ticker-price">42.30</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Iron Ore</span> <span class="ticker-price">0.11</span></span>
-                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Lithium</span> <span class="ticker-price">14.50</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Copper</span> <span class="ticker-price">8.68</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Lead</span> <span class="ticker-price">2.08</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Gold</span> <span class="ticker-price">59,232.26</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tin</span> <span class="ticker-price">25.65</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Cobalt</span> <span class="ticker-price">80.60</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Nickel</span> <span class="ticker-price">24.55</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Aluminium Alloy</span> <span class="ticker-price">2.15</span></span>
+              </div>
+              <div class="ticker-content" aria-hidden="true">
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Copper</span> <span class="ticker-price">8.68</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Lead</span> <span class="ticker-price">2.08</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Gold</span> <span class="ticker-price">59,232.26</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Tin</span> <span class="ticker-price">25.65</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--up"></span><span class="ticker-name">Cobalt</span> <span class="ticker-price">80.60</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Nickel</span> <span class="ticker-price">24.55</span></span>
+                <span class="ticker-item"><span class="ticker-arrow ticker-arrow--down"></span><span class="ticker-name">Aluminium Alloy</span> <span class="ticker-price">2.15</span></span>
               </div>
             </div>
           </div>
@@ -95,89 +103,27 @@
     </div>
   </header>
 
-  <main id="main" class="region region-content overflow-x-hidden" role="main">
-    <section class="news-carousel-section p-4 lg:px-5 lg:py-6">
-      <div class="news-carousel-inner">
-        <div class="news-carousel-viewport" id="news-carousel">
-          <div class="news-carousel-track gap-2 md:gap-3 lg:gap-5">
+  <main id="main" class="region region-content" role="main">
 
-            <article class="news-card rounded-lg lg:rounded-xl overflow-hidden">
-              <a href="news-article.html" class="news-card-link">
-                <img src="assets/slide-1.jpg" alt="Busoga leaders at a public hearing" class="news-card-img">
-                <div class="news-card-overlay box-border h-auto flex flex-col items-center gap-4">
-                  <span class="block w-max news-card-category text-center m-0 news-card-category--extractives">Extractives</span>
-                  <h3 class="news-card-title">Busoga leaders wary of resource curse as Makuutu project nears production</h3>
-                  <div class="news-card-meta">
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                      Anton Mwesiga
-                    </span>
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                      Jan 22, 2026
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-            <article class="news-card rounded-lg lg:rounded-xl overflow-hidden">
-              <a href="news-article.html" class="news-card-link">
-                <img src="assets/slide-2.jpg" alt="Makuutu Rare Earths project workers" class="news-card-img">
-                <div class="news-card-overlay box-border h-auto flex flex-col items-center gap-4">
-                  <span class="block w-max news-card-category text-center m-0 news-card-category--extractives">Extractives</span>
-                  <h3 class="news-card-title">Makuutu Rare Earths Project Affected People anxious as Land Clearance Begins</h3>
-                  <div class="news-card-meta">
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                      Administrato5
-                    </span>
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                      Jan 22, 2026
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-            <article class="news-card rounded-lg lg:rounded-xl overflow-hidden">
-              <a href="news-article.html" class="news-card-link">
-                <img src="assets/slide-3.jpg" alt="Stone quarrying industry worker" class="news-card-img">
-                <div class="news-card-overlay box-border h-auto flex flex-col items-center gap-4">
-                  <span class="block w-max news-card-category text-center m-0 news-card-category--environment">Environment</span>
-                  <h3 class="news-card-title">A Snapshot of the Mechanized Stone Quarrying Industry in Uganda</h3>
-                  <div class="news-card-meta">
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                      Donna Daiko
-                    </span>
-                    <span class="news-card-meta-item">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                      Jan 22, 2026
-                    </span>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-          </div>
+    <!-- Author bio section -->
+    <section class="author-bio-section" aria-label="Author profile">
+      <div class="author-bio-inner">
+        <div class="author-avatar-wrap">
+          <img src="assets/inline-image.jpg" alt="Christopher Byaruhanga" class="author-avatar">
         </div>
-
+        <h1 class="author-name">Christopher Byaruhanga</h1>
+        <p class="author-role">Programs Director</p>
+        <p class="author-org">Africa Centre for Energy and Mineral Policy (ACEMP)</p>
+        <p class="author-desc">Christopher is a dedicated news writer specializing in the mining and extractives sector, with a strong focus on transparency, sustainability, and community impact. With a keen eye for detail and a passion for responsible resource management, Christopher covers industry developments, policy changes, and the social and environmental implications of mining activities. For more information <a href="#" class="author-link">Click here</a>.</p>
       </div>
     </section>
 
+    <!-- News listing section -->
     <section class="news-updates-section site-section px-4 lg:px-5">
       <div class="news-updates-inner">
-        <div class="news-updates-header">
-          <span class="news-updates-badge">
-            <img src="assets/plexii-icon.svg" width="16" height="16" aria-hidden="true" alt=""/>
-            Keep updated with the latest from us
-          </span>
-          <h2 class="news-updates-title">News and updates</h2>
-        </div>
 
         <div class="news-updates-grid">
+
           <article class="nu-card p-4">
             <a href="news-article.html" class="nu-card-link">
               <div class="nu-card-img-wrap rounded-lg">
@@ -201,12 +147,29 @@
                 <img src="assets/slide-1.jpg" alt="Community meeting in Busoga" class="nu-card-img">
               </div>
               <div class="nu-card-body">
-                <h3 class="nu-card-title">Misinformation hyping Busoga's landless youth to remain adamant...</h3>
+                <h3 class="nu-card-title">Makuutu Rare Earths Project Affected People anxioMisinformation...</h3>
                 <p class="nu-card-date">
                   <svg class="nu-card-date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                  Dec 16, 2025
+                  Jan 22, 2026
                 </p>
-                <p class="nu-card-excerpt">Nawanvubu village in Buwaaya Sub County is nestled eight kilometers from Mayuge Town, in Mayuge district off the Kampala-Tororo Highway. Like many trading centers in Busoga region, it's hardly a vibrant dwelling, only...</p>
+                <p class="nu-card-excerpt">Nawanvubu village in Buwaaya Sub County is nestled eight kilometers from Mayuge Town, in Mayuge district off the Kampala-Tororo Highway. Like many trading centers in Busoga region, it's hardly a vibrant dwelling, only dotted...</p>
+                <span class="nu-card-read-more">READ MORE <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="nu-card p-4">
+            <a href="news-article.html" class="nu-card-link">
+              <div class="nu-card-img-wrap rounded-lg">
+                <img src="assets/slide-1.jpg" alt="Public hearing in Busoga" class="nu-card-img">
+              </div>
+              <div class="nu-card-body">
+                <h3 class="nu-card-title">Busoga leaders wary of resource curse as Makuutu project nears...</h3>
+                <p class="nu-card-date">
+                  <svg class="nu-card-date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Jan 22, 2026
+                </p>
+                <p class="nu-card-excerpt">Leaders in Busoga are wary the sub region will not benefit from the Makuutu Rare Earths project in Makuutu Sub-County, Bugweri district, one of the flagship multibillion investments in Uganda as the country pivots the mining...</p>
                 <span class="nu-card-read-more">READ MORE <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg></span>
               </div>
             </a>
@@ -221,9 +184,9 @@
                 <h3 class="nu-card-title">We have come a long way – Rwenzori Rare Metals says of Makuutu Project...</h3>
                 <p class="nu-card-date">
                   <svg class="nu-card-date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                  Dec 16, 2025
+                  Jan 22, 2026
                 </p>
-                <p class="nu-card-excerpt">Our stakeholders are highly expectant over the project and development prospects associated with such a project. Such projects often come with such expectations, and Makuutu Rare Earth Project is no exception.</p>
+                <p class="nu-card-excerpt">The first of its kind in Uganda, Rwenzori Rare Metals is developing an Ionic Adsorption Clay (IAC) deposit of Rare Earth Elements located in the districts of Bugweri, Mayuge and Bugiri under a project dubbed the Makuutu Rare...</p>
                 <span class="nu-card-read-more">READ MORE <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg></span>
               </div>
             </a>
@@ -238,197 +201,48 @@
                 <h3 class="nu-card-title">Mine accidents continue to claim lives of ASMs</h3>
                 <p class="nu-card-date">
                   <svg class="nu-card-date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                  Dec 16, 2025
+                  Jan 22, 2026
                 </p>
                 <p class="nu-card-excerpt">The latest incident was registered on December 9 in the gold mines of Bihanga Sub County, Buhweju District, claiming four artisanal miners.</p>
                 <span class="nu-card-read-more">READ MORE <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg></span>
               </div>
             </a>
           </article>
+
+          <article class="nu-card p-4">
+            <a href="news-article.html" class="nu-card-link">
+              <div class="nu-card-img-wrap rounded-lg">
+                <img src="assets/slide-3.jpg" alt="Uganda mining cadaster portal" class="nu-card-img">
+              </div>
+              <div class="nu-card-body">
+                <h3 class="nu-card-title">Online mining cadaster transaction portal reopens, aligned with new law</h3>
+                <p class="nu-card-date">
+                  <svg class="nu-card-date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Jan 22, 2026
+                </p>
+                <p class="nu-card-excerpt">The Ministry of Energy and Mineral Development has reopened the online mining cadaster transactional portal after aligning it with the Mining and Minerals Act 2022.</p>
+                <span class="nu-card-read-more">READ MORE <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg></span>
+              </div>
+            </a>
+          </article>
+
         </div>
 
-        <div class="news-updates-footer">
-          <a href="news.html" class="btn-more-news">
-            More News
-            <span class="btn-more-news-icon" aria-hidden="true">
-              <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
-            </span>
+        <!-- Pagination -->
+        <nav class="news-pagination" aria-label="News pagination">
+          <a href="#" class="news-pagination-btn news-pagination-btn--prev" aria-label="Previous page">
+            <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 H3 M7.5 0.5 L3 5 L7.5 9.5"/></svg>
+            PREVIOUS
           </a>
-        </div>
-
-        <div class="advert-banner" style="background-image: url('assets/nuclear-day.jpg')">
-          <div class="advert-banner-content">
-            <h2 class="advert-banner-title">World Nuclear Day <span class="advert-banner-year">2026</span></h2>
-            <a href="#" class="btn-advert-details">MORE DETAILS</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="multimedia-section site-section px-4 lg:px-5">
-      <div class="multimedia-inner inner w-full">
-        <div class="multimedia-content-wrap w-full grid lg:grid-cols-2">
-          <div>
-            <div class="multimedia-header">
-              <span class="multimedia-badge">
-                <img src="assets/plexii-icon.svg" width="16" height="16" aria-hidden="true" alt=""/>
-                PLEXII Multimedia
-              </span>
-              <h2 class="multimedia-title">Browse video and audio files from PLEXII</h2>
-            </div>
-
-            <div class="multimedia-tabs" role="tablist" aria-label="Media type">
-              <button class="mm-tab mm-tab--active" role="tab" aria-selected="true" aria-controls="mm-panel-video" id="mm-tab-video">VIDEO FILES</button>
-              <button class="mm-tab" role="tab" aria-selected="false" aria-controls="mm-panel-audio" id="mm-tab-audio">AUDIO FILES</button>
-            </div>
-
-            <div id="mm-panel-video" role="tabpanel" aria-labelledby="mm-tab-video">
-              <div class="mm-video-card">
-                <div class="mm-video-thumb">
-                  <iframe
-                    class="mm-video-iframe"
-                    src="https://www.youtube.com/embed/mvEmhtbtPMQ"
-                    title="Skilling Women Tin Dealers in Ntungamo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
-                </div>
-                <div class="mm-video-info">
-                  <h3 class="mm-video-title">Skilling Women Tin Dealers in Ntungamo</h3>
-                  <p class="mm-video-date">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                    Oct 15, 2018
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div id="mm-panel-audio" role="tabpanel" aria-labelledby="mm-tab-audio" hidden>
-              <ul class="mm-audio-list">
-                <li class="mm-audio-item">
-                  <button class="mm-audio-play" aria-label="Play Sample Audio File">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-                  </button>
-                  <div class="mm-audio-meta">
-                    <span class="mm-audio-title">Sample Audio File</span>
-                    <span class="mm-audio-duration">03.21</span>
-                  </div>
-                  <span class="mm-audio-date">Jan 22, 2026</span>
-                </li>
-                <li class="mm-audio-item">
-                  <button class="mm-audio-play" aria-label="Play Sample Audio File">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-                  </button>
-                  <div class="mm-audio-meta">
-                    <span class="mm-audio-title">Sample Audio File</span>
-                    <span class="mm-audio-duration">03.21</span>
-                  </div>
-                  <span class="mm-audio-date">Jan 22, 2026</span>
-                </li>
-                <li class="mm-audio-item">
-                  <button class="mm-audio-play" aria-label="Play Sample Audio File">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-                  </button>
-                  <div class="mm-audio-meta">
-                    <span class="mm-audio-title">Sample Audio File</span>
-                    <span class="mm-audio-duration">03.21</span>
-                  </div>
-                  <span class="mm-audio-date">Jan 22, 2026</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="multimedia-footer">
-              <a href="media.html" class="btn-more-multimedia">
-                view media library
-                <span class="btn-more-multimedia-icon" aria-hidden="true">
-                  <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="topic-ticker-section">
-      <div class="topic-ticker-track">
-        <div class="topic-ticker-inner">
-          <span class="topic-ticker-item"><img src="assets/extractives.svg" class="topic-ticker-icon" alt=""> Sustainable Extractives</span>
-          <span class="topic-ticker-dot"></span>
-          <span class="topic-ticker-item"><img src="assets/environment.svg" class="topic-ticker-icon" alt=""> Preserved Environment</span>
-          <span class="topic-ticker-dot"></span>
-        </div>
-        <div class="topic-ticker-inner" aria-hidden="true">
-          <span class="topic-ticker-item"><img src="assets/extractives.svg" class="topic-ticker-icon" alt=""> Sustainable Extractives</span>
-          <span class="topic-ticker-dot"></span>
-          <span class="topic-ticker-item"><img src="assets/environment.svg" class="topic-ticker-icon" alt=""> Preserved Environment</span>
-          <span class="topic-ticker-dot"></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="lib-partners-section">
-      <div class="lib-partners-inner md:grid md:gap-4 lg:gap-5 md:grid-cols-2">
-
-        <!-- Library card -->
-        <div class="lib-card mb-4 md:mb-0">
-          <div class="lib-card-content">
-            <div class="grid gap-4 justify-items-center w-full">
-              <span class="lib-partners-badge w-max">
-                <img src="assets/p-icon-white.svg" width="16" height="16" aria-hidden="true" alt=""/>
-                Library
-              </span>
-              <h2 class="lib-card-title">Reports, Magazines, Policies &amp; Laws</h2>
-            </div>
-            <div class="library-footer">
-              <a href="library.html" class="btn-more-library">
-                view library
-                <span class="btn-more-library-icon" aria-hidden="true">
-                  <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Partners card -->
-        <div class="partners-card">
-          <div class="grid gap-4 justify-items-center w-full">
-            <span class="lib-partners-badge lib-partners-badge--dark">
-              <img src="assets/plexii-icon.svg" width="16" height="16" aria-hidden="true" alt=""/>
-              Partners
-            </span>
-            <h2 class="partners-card-title">The Partners that we work with to drive our mission home</h2>
-          </div>
-          <div class="partners-carousel-wrap">
-            <div class="partners-carousel-track">
-              <div class="partners-carousel-inner">
-                <a href="https://www.enabel.be" class="partner-logo-link" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/enabel.jpg" alt="Enabel" class="partner-logo">
-                </a>
-                <a href="https://www.acemp.org" class="partner-logo-link" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/acemp.jpg" alt="ACEMP – Africa Centre For Energy And Mineral Policy" class="partner-logo">
-                </a>
-              </div>
-              <div class="partners-carousel-inner" aria-hidden="true">
-                <a href="https://www.enabel.be" class="partner-logo-link" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/enabel.jpg" alt="" class="partner-logo">
-                </a>
-                <a href="https://www.acemp.org" class="partner-logo-link" tabindex="-1" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/acemp.jpg" alt="" class="partner-logo">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <a href="#" class="news-pagination-btn news-pagination-btn--next" aria-label="Next page">
+            NEXT
+            <svg width="18" height="10" viewBox="0 0 24 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 5 H21 M16.5 0.5 L21 5 L16.5 9.5"/></svg>
+          </a>
+        </nav>
 
       </div>
     </section>
+
   </main>
 
   <footer id="footer" class="region region-footer">
@@ -471,9 +285,9 @@
             <h3>Navigation</h3>
             <div class="footer-nav-columns">
               <ul>
-                <li><a href="#" class="is-active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">News Updates</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="news.html" class="is-active">News Updates</a></li>
                 <li><a href="mining.html">Mining</a></li>
                 <li><a href="oil-gas.html">Oil &amp; Gas</a></li>
               </ul>
